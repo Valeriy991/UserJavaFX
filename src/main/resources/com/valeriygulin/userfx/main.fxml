@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            stylesheets="@bootstrap3.css"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.valeriygulin.userfx.controllers.MainController">
+    <children>
+        <ComboBox fx:id="comboBoxUsers" layoutX="37.0" layoutY="90.0" prefWidth="510.0"/>
+        <ListView fx:id="listViewUsers" layoutX="37.0" layoutY="189.0" prefHeight="180.0" prefWidth="510.0"/>
+        <Button layoutX="37.0" layoutY="149.0" mnemonicParsing="false" styleClass="primary" onAction="#buttonSave"
+                text="Save"/>
+        <Button layoutX="37.0" layoutY="385.0" mnemonicParsing="false" styleClass="primary"  onAction="#buttonDelete"
+                text="Delete"/>
+        <Button layoutX="123.0" layoutY="385.0" mnemonicParsing="false" styleClass="primary"  onAction="#buttonInfo"
+                text="Info"/>
+        <Button layoutX="496.0" layoutY="385.0" mnemonicParsing="false" styleClass="primary"  onAction="#buttonInfo2"
+                text="Инфо"/>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="570.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Menu">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuButtonOpen" text="Open">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP"
+                                                    shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#menuButtonSave" text="Save">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP"
+                                                    shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#menuButtonSaveAs" text="Save As">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN"
+                                                    shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

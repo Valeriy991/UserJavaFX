@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.valeriygulin.userfx.controllers.SecondController">
+    <children>
+        <Label layoutX="45.0" layoutY="40.0" text="id" />
+        <Label layoutX="45.0" layoutY="80.0" text="name" />
+        <Label layoutX="45.0" layoutY="120.0" text="username" />
+        <Label layoutX="45.0" layoutY="160.0" text="e-mail" />
+        <Label layoutX="45.0" layoutY="200.0" text="address" />
+        <Label layoutX="45.0" layoutY="240.0" text="phone" />
+        <Label layoutX="45.0" layoutY="280.0" text="website" />
+        <Label layoutX="45.0" layoutY="320.0" text="company" />
+        <TextField fx:id="textFieldID" layoutX="113.0" layoutY="40.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldName" layoutX="113.0" layoutY="80.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldUsrName" layoutX="113.0" layoutY="120.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldEMail" layoutX="113.0" layoutY="160.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldAddress" layoutX="113.0" layoutY="200.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldPhone" layoutX="113.0" layoutY="240.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldWebsite" layoutX="113.0" layoutY="280.0" prefHeight="26.0" prefWidth="444.0" />
+        <TextField fx:id="textFieldCompany" layoutX="113.0" layoutY="320.0" prefHeight="26.0" prefWidth="444.0" />
+        <Button layoutX="502.0" layoutY="368.0" mnemonicParsing="false" onAction="#buttonClose" styleClass="primary" text="Close" />
+    </children>
+</AnchorPane>
